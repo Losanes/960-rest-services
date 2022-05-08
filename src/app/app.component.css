@@ -1,0 +1,13 @@
+body {
+    text-align: center;
+}
+
+h1 {
+    font-size: 100px;
+}
+
+button {
+    background-color: red;
+    font-size: 50px;
+    margin-right: 40px;
+}

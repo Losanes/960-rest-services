@@ -1,0 +1,15 @@
+<body>
+  <img src="../assets/marvel.png" height="300px">
+  <h1>Sei un fan della Marvel?</h1>
+  <button (click)="mostra()">
+    Sì
+  </button>
+  <button (click)="nonMostra()">
+    No
+  </button>
+  <p *ngFor="let f of film">
+    {{f}}
+  </p>
+  <br>
+  <img [src]="src">
+</body>
