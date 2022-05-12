@@ -10,15 +10,15 @@ export class AppComponent {
   film:string[] = [];
   src:string = "";
 
-  constructor(private http:HttpClient){}
+  constructor(private http:HttpClient){} //creiamo oggetto di tipo HttpClient x rich li fi
 
   mostra() {
     this.src = "";
-    this.http.get("https://mcuapi.herokuapp.com/api/v1/movies").subscribe(
-      (res:any) => {
+    this.http.get("https://mcuapi.herokuapp.com/api/v1/movies").subscribe( //us og us get pass li es sub
+      (res:any) => { //ris AP
         var movies = res['data'];
-        [...movies].forEach(x => {
-          this.film.push(x['title']);
+        [...movies].forEach(x => { //11
+          this.film.push(x['title']); // ric ar fi x agg el 
         });
       },
       err => {
